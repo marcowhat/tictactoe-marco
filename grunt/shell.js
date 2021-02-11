@@ -35,7 +35,7 @@ module.exports = {
     command: 'git push origin main || (git clean -f && false)'
   },
   'git-checkout-main': {
-    command: 'git checkout master'
+    command: 'git checkout main'
   },
   'deploy-prepare': {
     command: [
