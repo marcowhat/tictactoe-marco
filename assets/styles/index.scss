@@ -1,1 +1,28 @@
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+h1{
+  font-family: "Stalinist One",serif;
+  text-align: center;
+  padding: 10px;
+  margin: 12px 10px;
+  }
+  h3 {
+    font-family: "Stalinist One", serif;
+    text-align: center;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  input{
+    display: flex;
+    align-self: center;
+  }
+  button {
+    display: flex;
+    align-self: center;
+    margin-top: 5px;
+  }
+  #heading-signin ,#heading-pw{
+    margin-top: 10px;
+  }

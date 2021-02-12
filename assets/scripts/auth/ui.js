@@ -17,6 +17,8 @@ const signInSuccess = function (response) {
   $('#change-pw').show()
   $('#heading-signout').show()
   $('#sign-out').show()
+  $('#sign-up').hide()
+  $('#heading-signup').hide()
 }
 const signInFailure = function (response) {
   $('#sign-failure').text('Failed, try again')
