@@ -10,6 +10,7 @@ const signUpFail = function (response) {
 }
 const signInSuccess = function (response) {
   store.user = response.user
+  console.log(response)
   // console.log('signed In')
   $('#sign-success').text('Signed In')
   $('#sign-up').trigger('reset')
@@ -19,16 +20,22 @@ const signInSuccess = function (response) {
   $('#sign-out').show()
   $('#sign-up').hide()
   $('#heading-signup').hide()
+  $('#heading-signin').hide()
+  $('#sign-in').hide()
+  $('#game-button').show()
 }
 const signInFailure = function (response) {
   $('#sign-failure').text('Failed, try again')
 }
 const signOutSuccess = function (response) {
+  console.log(response)
   $('#sign-success').text('Signed Out')
   $('#heading-pw').hide()
   $('#change-pw').hide()
   $('#heading-signout').hide()
   $('#sign-out').hide()
+  $('#sign-in').show()
+  $('#heading-signin').show()
 }
 const signOutFailure = function (response) {
   $('#sign-success').text('Error, try again')
