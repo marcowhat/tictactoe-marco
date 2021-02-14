@@ -36,6 +36,8 @@ const signOutSuccess = function (response) {
   $('#sign-out').hide()
   $('#sign-in').show()
   $('#heading-signin').show()
+  $('#game-board').hide()
+  $('#game-button').hide()
 }
 const signOutFailure = function (response) {
   $('#sign-success').text('Error, try again')

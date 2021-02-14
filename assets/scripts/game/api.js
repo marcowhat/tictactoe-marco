@@ -1,10 +1,16 @@
-const signOut = function (gameBoard) {
+const config = require('../config')
+const store = require('../store')
+const startGame = function () {
   return $.ajax({
     method: 'POST',
     url: config.apiUrl + '/games',
-    data: data,
     headers: {
       Authorization: 'Bearer ' + store.user.token
-    }
+    },
+    data: '{}'
   })
+}
+
+module.exports = {
+  startGame
 }
