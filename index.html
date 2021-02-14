@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Marco's Tic Tac Toe</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1>Tic Tac Toe</h1>
+      <main>
+        <section id="auth-section">
+          <h3 id="heading-signup">Sign Up</h3>
+          <form id="sign-up">
+            <input name="credentials[email]" type="email" placeholder="Email Here" required>
+            <input name="credentials[password]" type="password" placeholder="Password Here" required>
+            <input name="credentials[password_confirmation]" type="password" placeholder="Password Here" required>
+            <button>Sign Up </button>
+          </form>
+          <h3 id="heading-signin">Sign In</h3>
+          <form id = "sign-in">
+            <input name="credentials[email]" type="email" placeholder="Email Here" required>
+            <input name="credentials[password]" type="password" placeholder="Password Here" required>
+            <button> Sign In </button>
+          </form>
+          <h3 id="heading-pw">Change Password</h3>
+            <form id="change-pw">
+              <input name="passwords[old]" type="password" placeholder="Old Password" required>
+              <input name="passwords[new]" type="password" placeholder="New Password" required>
+              <button>Submit</button>
+            </form>
+          <h5 id="heading-signout">Sign Out</h5>
+          <button id="sign-out">Sign Out</button>
+        </section>
+        <hr>
+        <div id="sign-success"></div>
+        <div id="sign-failure"></div>
+      <button id="game-button">New Game</button>
+      <section id="game-board" >
+            <div class="container">
+              <div class = "row">
+                  <div id="0" class = "col-4 box right down"></div>
+                  <div id="1" class = "col-4 box right down"></div>
+                  <div id="2" class= "col-4 box down"></div>
+                  <div id="3" class= "col-4 box right down"> </div>
+                  <div id="4" class= "col-4 box right down"> </div>
+                  <div id="5" class= "col-4 box down"> </div>
+                  <div id="6" class= "col-4 box right"> </div>
+                  <div id="7" class= "col-4 box right"> </div>
+                  <div id="8" class= "col-4 box"> </div>
+            </div>
+          </div>
+    </section>
+    </main>
+    </body>
+</html>
